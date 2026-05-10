@@ -9,18 +9,30 @@
   <meta name="keywords" content="مطعم أولاد رزق, مشويات الزقازيق, مطعم مشويات في الزقازيق, كباب, كفتة, فراخ مشوية, دليفري الزقازيق">
   <meta name="author" content="Mohamed Abdullah">
   <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://kevinoffice404.github.io/awlad-rezk-restaurant/">
 
   <meta property="og:title" content="مطعم أولاد رزق | مشويات الزقازيق">
   <meta property="og:description" content="مشويات طازة، وجبات عائلية، سندوتشات، ودليفري داخل الزقازيق.">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="ar_EG">
   <meta property="og:site_name" content="أولاد رزق">
+  <meta property="og:url" content="https://kevinoffice404.github.io/awlad-rezk-restaurant/">
+  <meta property="og:image" content="https://kevinoffice404.github.io/awlad-rezk-restaurant/images/hero-grill.jpg">
+  <meta property="og:image:alt" content="طبق مشويات مشكل من مطعم أولاد رزق">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="مطعم أولاد رزق | مشويات الزقازيق">
+  <meta name="twitter:description" content="مشويات طازة، وجبات عائلية، سندوتشات، ودليفري داخل الزقازيق.">
+  <meta name="twitter:image" content="https://kevinoffice404.github.io/awlad-rezk-restaurant/images/hero-grill.jpg">
 
   <meta name="theme-color" content="#120b07">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="preload" as="image" href="./images/hero-grill.jpg">
+  <link rel="preload" as="image" href="./images/logo.png">
 
   <link rel="stylesheet" href="./styles.css">
 
@@ -29,15 +41,34 @@
     "@context": "https://schema.org",
     "@type": "Restaurant",
     "name": "مطعم أولاد رزق",
+    "description": "مطعم مشويات في الزقازيق يقدم وجبات مشوية وسندوتشات وعروض عائلية مع دليفري وطلبات عبر واتساب.",
     "servesCuisine": "مشويات",
+    "image": "https://kevinoffice404.github.io/awlad-rezk-restaurant/images/hero-grill.jpg",
+    "logo": "https://kevinoffice404.github.io/awlad-rezk-restaurant/images/logo.png",
+    "url": "https://kevinoffice404.github.io/awlad-rezk-restaurant/",
+    "telephone": "+201028187829",
+    "priceRange": "$$",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "الزقازيق",
       "addressCountry": "EG"
     },
-    "telephone": "+201028187829",
-    "openingHours": "Mo-Su 12:00-03:00",
-    "priceRange": "$$",
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "12:00",
+        "closes": "03:00"
+      }
+    ],
     "acceptsReservations": false
   }
   </script>
@@ -48,7 +79,13 @@
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="#home" aria-label="مطعم أولاد رزق">
-        <span class="brand-logo">🔥</span>
+        <img class="brand-logo-img"
+             src="./images/logo.png"
+             alt="شعار مطعم أولاد رزق"
+             width="48"
+             height="48"
+             loading="eager">
+
         <span>
           <strong>أولاد رزق</strong>
           <small>مشويات الزقازيق</small>
@@ -77,7 +114,7 @@
           <p class="eyebrow">مشويات طازة يوميًا في الزقازيق</p>
 
           <h1>
-            مطعم أولاد رزق  
+            مطعم أولاد رزق
             <span>طعم المشويات اللي يتطلب تاني</span>
           </h1>
 
@@ -86,9 +123,13 @@
           </p>
 
           <div class="hero-actions">
-            <a class="btn primary" href="https://wa.me/201023799167?text=السلام%20عليكم%20أريد%20طلب%20من%20مطعم%20أولاد%20رزق" target="_blank" rel="noopener">
+            <a class="btn primary"
+               href="https://wa.me/201023799167?text=السلام%20عليكم%20أريد%20طلب%20من%20مطعم%20أولاد%20رزق"
+               target="_blank"
+               rel="noopener">
               اطلب عبر واتساب
             </a>
+
             <a class="btn secondary" href="#menu">شاهد المنيو</a>
           </div>
 
@@ -97,10 +138,12 @@
               <strong>12 ظهرًا</strong>
               <span>بداية العمل</span>
             </div>
+
             <div>
               <strong>3 صباحًا</strong>
               <span>نهاية العمل</span>
             </div>
+
             <div>
               <strong>دليفري</strong>
               <span>متاح يوميًا</span>
@@ -109,8 +152,12 @@
         </div>
 
         <div class="hero-card reveal">
-          <div class="fire-ring">
-            <span>🥩</span>
+          <div class="hero-photo-wrap">
+            <img src="./images/hero-grill.jpg"
+                 alt="طبق مشويات مشكل من مطعم أولاد رزق"
+                 width="900"
+                 height="560"
+                 loading="eager">
           </div>
 
           <h2>طبق مشويات مخصوص</h2>
@@ -164,7 +211,7 @@
         <div class="section-heading center reveal">
           <p class="eyebrow">المنيو</p>
           <h2>اختار طلبك</h2>
-          <p>الأسعار مؤقتة وقابلة للتعديل حسب السعر الحقيقي للمطعم.</p>
+          <p>اختار من أشهى وجبات وسندوتشات المشويات واطلب مباشرة عبر واتساب.</p>
         </div>
 
         <div class="menu-tabs reveal" role="tablist" aria-label="تصنيفات المنيو">
@@ -178,10 +225,17 @@
         <div class="menu-grid">
 
           <article class="menu-card reveal" data-category="meals">
-            <div class="food-icon">🍢</div>
+            <img class="food-photo"
+                 src="./images/kofta-meal.jpg"
+                 alt="وجبة كفتة مشوية من مطعم أولاد رزق"
+                 width="300"
+                 height="220"
+                 loading="lazy">
+
             <div class="menu-card-body">
               <h3>وجبة كفتة مشوية</h3>
               <p>كفتة مشوية + أرز أو عيش + سلطة + طحينة.</p>
+
               <div class="menu-bottom">
                 <strong>120 جنيه</strong>
                 <button type="button" class="order-btn" data-item="وجبة كفتة مشوية">اطلب</button>
@@ -190,10 +244,17 @@
           </article>
 
           <article class="menu-card reveal" data-category="meals">
-            <div class="food-icon">🥩</div>
+            <img class="food-photo"
+                 src="./images/kebab-meal.jpg"
+                 alt="وجبة كباب مشوي من مطعم أولاد رزق"
+                 width="300"
+                 height="220"
+                 loading="lazy">
+
             <div class="menu-card-body">
               <h3>وجبة كباب مشوي</h3>
               <p>قطع كباب مشوية بتتبيلة مميزة مع الإضافات.</p>
+
               <div class="menu-bottom">
                 <strong>180 جنيه</strong>
                 <button type="button" class="order-btn" data-item="وجبة كباب مشوي">اطلب</button>
@@ -202,10 +263,17 @@
           </article>
 
           <article class="menu-card reveal" data-category="meals">
-            <div class="food-icon">🍗</div>
+            <img class="food-photo"
+                 src="./images/chicken-meal.jpg"
+                 alt="نصف فرخة مشوية مع أرز وسلطات"
+                 width="300"
+                 height="220"
+                 loading="lazy">
+
             <div class="menu-card-body">
               <h3>نصف فرخة مشوية</h3>
               <p>نصف فرخة على الفحم + أرز + سلطة + طحينة.</p>
+
               <div class="menu-bottom">
                 <strong>150 جنيه</strong>
                 <button type="button" class="order-btn" data-item="نصف فرخة مشوية">اطلب</button>
@@ -214,10 +282,17 @@
           </article>
 
           <article class="menu-card reveal" data-category="sandwiches">
-            <div class="food-icon">🌯</div>
+            <img class="food-photo"
+                 src="./images/kofta-sandwich.jpg"
+                 alt="ساندوتش كفتة مشوية من مطعم أولاد رزق"
+                 width="300"
+                 height="220"
+                 loading="lazy">
+
             <div class="menu-card-body">
               <h3>ساندوتش كفتة</h3>
               <p>كفتة مشوية داخل عيش طازة مع صوص خاص.</p>
+
               <div class="menu-bottom">
                 <strong>55 جنيه</strong>
                 <button type="button" class="order-btn" data-item="ساندوتش كفتة">اطلب</button>
@@ -226,10 +301,17 @@
           </article>
 
           <article class="menu-card reveal" data-category="sandwiches">
-            <div class="food-icon">🥙</div>
+            <img class="food-photo"
+                 src="./images/shish-sandwich.jpg"
+                 alt="ساندوتش شيش طاووق من مطعم أولاد رزق"
+                 width="300"
+                 height="220"
+                 loading="lazy">
+
             <div class="menu-card-body">
               <h3>ساندوتش شيش طاووق</h3>
               <p>قطع فراخ مشوية متبلة مع صوص وثومية.</p>
+
               <div class="menu-bottom">
                 <strong>65 جنيه</strong>
                 <button type="button" class="order-btn" data-item="ساندوتش شيش طاووق">اطلب</button>
@@ -238,10 +320,17 @@
           </article>
 
           <article class="menu-card reveal" data-category="sandwiches">
-            <div class="food-icon">🍖</div>
+            <img class="food-photo"
+                 src="./images/kebab-meal.jpg"
+                 alt="ساندوتش كباب مشوي من مطعم أولاد رزق"
+                 width="300"
+                 height="220"
+                 loading="lazy">
+
             <div class="menu-card-body">
               <h3>ساندوتش كباب</h3>
               <p>كباب مشوي بطعم غني داخل عيش ساخن.</p>
+
               <div class="menu-bottom">
                 <strong>80 جنيه</strong>
                 <button type="button" class="order-btn" data-item="ساندوتش كباب">اطلب</button>
@@ -250,10 +339,17 @@
           </article>
 
           <article class="menu-card reveal" data-category="family">
-            <div class="food-icon">🍽️</div>
+            <img class="food-photo"
+                 src="./images/family-platter.jpg"
+                 alt="عرض مشويات مشكل لفردين من مطعم أولاد رزق"
+                 width="300"
+                 height="220"
+                 loading="lazy">
+
             <div class="menu-card-body">
               <h3>عرض مشكل فردين</h3>
               <p>كفتة + كباب + شيش + أرز + سلطات.</p>
+
               <div class="menu-bottom">
                 <strong>320 جنيه</strong>
                 <button type="button" class="order-btn" data-item="عرض مشكل فردين">اطلب</button>
@@ -262,10 +358,17 @@
           </article>
 
           <article class="menu-card reveal" data-category="family">
-            <div class="food-icon">👨‍👩‍👧‍👦</div>
+            <img class="food-photo"
+                 src="./images/family-platter.jpg"
+                 alt="عرض مشويات عائلي لأربعة أفراد من مطعم أولاد رزق"
+                 width="300"
+                 height="220"
+                 loading="lazy">
+
             <div class="menu-card-body">
               <h3>عرض عائلي 4 أفراد</h3>
               <p>تشكيلة مشويات + أرز + عيش + سلطات ومقبلات.</p>
+
               <div class="menu-bottom">
                 <strong>620 جنيه</strong>
                 <button type="button" class="order-btn" data-item="عرض عائلي 4 أفراد">اطلب</button>
@@ -274,10 +377,17 @@
           </article>
 
           <article class="menu-card reveal" data-category="sides">
-            <div class="food-icon">🍚</div>
+            <img class="food-photo"
+                 src="./images/sides-spread.jpg"
+                 alt="أرز بسمتي وسلطات ومقبلات من مطعم أولاد رزق"
+                 width="300"
+                 height="220"
+                 loading="lazy">
+
             <div class="menu-card-body">
               <h3>أرز بسمتي</h3>
               <p>طبق أرز مناسب مع كل وجبات المشويات.</p>
+
               <div class="menu-bottom">
                 <strong>30 جنيه</strong>
                 <button type="button" class="order-btn" data-item="أرز بسمتي">اطلب</button>
@@ -286,10 +396,17 @@
           </article>
 
           <article class="menu-card reveal" data-category="sides">
-            <div class="food-icon">🥗</div>
+            <img class="food-photo"
+                 src="./images/sides-spread.jpg"
+                 alt="سلطات ومقبلات وطحينة من مطعم أولاد رزق"
+                 width="300"
+                 height="220"
+                 loading="lazy">
+
             <div class="menu-card-body">
               <h3>سلطات ومقبلات</h3>
               <p>طحينة، سلطة خضراء، مخلل، وثومية.</p>
+
               <div class="menu-bottom">
                 <strong>25 جنيه</strong>
                 <button type="button" class="order-btn" data-item="سلطات ومقبلات">اطلب</button>
@@ -369,7 +486,7 @@
             <li><strong>📍 العنوان:</strong> الزقازيق</li>
             <li><strong>🕛 المواعيد:</strong> من 12 الظهر إلى 3 صباحًا</li>
             <li><strong>🛵 الدليفري:</strong> متاح</li>
-            <li><strong>📞 اتصال:</strong> <a href="tel:01028187829">01028187829</a></li>
+            <li><strong>📞 اتصال:</strong> <a href="tel:+201028187829">01028187829</a></li>
             <li><strong>💬 واتساب:</strong> <a href="https://wa.me/201023799167" target="_blank" rel="noopener">01023799167</a></li>
           </ul>
 
@@ -382,7 +499,11 @@
         <div class="map-card reveal">
           <h3>موقع المطعم</h3>
           <p>الزقازيق — يتم تحديث رابط الخريطة لاحقًا.</p>
-          <a class="btn primary full" href="https://www.google.com/maps/search/?api=1&query=Zagazig" target="_blank" rel="noopener">
+
+          <a class="btn primary full"
+             href="https://www.google.com/maps/search/?api=1&query=Zagazig"
+             target="_blank"
+             rel="noopener">
             افتح الخريطة
           </a>
         </div>
@@ -412,4 +533,4 @@
 
   <script src="./script.js"></script>
 </body>
-</html>
+  </html>
