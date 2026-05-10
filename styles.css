@@ -565,9 +565,24 @@ h1 span {
   margin-top: 30px;
 }
 
-.offer-card,
-.review-card,
-.map-card {
+.offer-card {
+  overflow: hidden;
+  padding: 0;
+}
+
+.offer-photo {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-bottom: 1px solid var(--border);
+  transition: transform .45s ease;
+}
+
+.offer-card:hover .offer-photo {
+  transform: scale(1.04);
+}
+
+.offer-content {
   padding: 24px;
 }
 
@@ -587,11 +602,94 @@ h1 span {
 }
 
 .offer-card strong {
+  display: block;
   color: var(--gold);
   font-size: 22px;
 }
 
+.offer-order {
+  margin-top: 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 42px;
+  padding: 9px 16px;
+  border-radius: 14px;
+  background: var(--gold);
+  color: #201005;
+  font-weight: 900;
+  transition: transform .25s ease, background .25s ease;
+}
+
+.offer-order:hover {
+  background: #ffd062;
+  transform: translateY(-2px);
+}
+
+/* ===== Gallery ===== */
+
+.gallery-section {
+  background:
+    radial-gradient(700px 420px at 0% 0%, rgba(247, 183, 51, .08), transparent 55%),
+    rgba(255, 255, 255, .015);
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 230px;
+  gap: 16px;
+  margin-top: 34px;
+}
+
+.gallery-item {
+  position: relative;
+  margin: 0;
+  overflow: hidden;
+  border-radius: 24px;
+  border: 1px solid var(--border);
+  background: var(--card);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, .22);
+}
+
+.gallery-item.large {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .5s ease, filter .5s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.06);
+  filter: brightness(.82);
+}
+
+.gallery-item figcaption {
+  position: absolute;
+  inset-inline: 14px;
+  bottom: 14px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: rgba(18, 11, 7, .72);
+  backdrop-filter: blur(8px);
+  color: var(--gold);
+  font-weight: 900;
+  font-size: 14px;
+  text-align: center;
+  border: 1px solid rgba(247, 183, 51, .25);
+}
+
 /* ===== Reviews ===== */
+
+.review-card,
+.map-card {
+  padding: 24px;
+}
 
 .review-card {
   margin: 0;
@@ -802,6 +900,16 @@ h1 span {
     grid-template-columns: 1fr;
   }
 
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 220px;
+  }
+
+  .gallery-item.large {
+    grid-column: span 2;
+    grid-row: span 1;
+  }
+
   .footer-inner {
     flex-direction: column;
     text-align: center;
@@ -893,6 +1001,20 @@ h1 span {
   .order-btn {
     width: 100%;
     min-height: 44px;
+  }
+
+  .offer-photo {
+    height: 190px;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 230px;
+  }
+
+  .gallery-item.large {
+    grid-column: span 1;
+    grid-row: span 1;
   }
 
   .floating-whatsapp {
